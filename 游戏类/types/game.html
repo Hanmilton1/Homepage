@@ -1,0 +1,267 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>打字游戏</title>
+	<script src="game.js"></script>
+	<script src="animate.js"></script>
+	<script>
+		window.onload=function(){
+			var startbox=document.getElementsByClassName('start')[0];
+			var start=document.getElementById('start');
+			var input=document.getElementsByTagName('input')[0];
+			//var input=document.getElementsByTagName('input')[0];
+			start.onclick=function(){
+				animate(startbox,{opacity:0},500,function(){
+					startbox.style.display="none";
+				});
+				var newstep=input.value;
+				var obj=new game();
+				obj.step=newstep;
+				var stepSpan=document.getElementById("stepbox");
+				stepSpan.innerHTML=newstep;
+				obj.stepNum=(newstep-1)*5+10;
+				obj.speed=(newstep-1)+5;
+				if(newstep>11){
+					newstep=11;
+				}
+				obj.letterLength=(newstep-1)+4;
+				//obj.step=1||input.value;
+				setTimeout(function(){
+					obj.play();
+				},2000)
+				
+			}
+		}
+	</script>
+	<style>
+		html,body{
+			width:100%;height:100%;overflow: hidden;
+			background:url("img/打字.png");
+			background-size:cover ;
+			padding: 0;margin: 0;
+		}
+		.start{
+			width: 450px;height: 300px;
+			position: fixed;left: 0;top: 0;right: 0;bottom: 0;margin: auto auto;
+			background: url(img/打字背景.png) no-repeat 0 0;
+			background-size:100% 101%;
+			z-index: 100;
+		}
+		/* .start img{
+			width: 150px;height: 150px;
+			position: absolute;top: 50px;left: 80px;
+		} */
+		.select{
+			width: 300px;height: 150px;
+			position: absolute;left:0;right:0;
+			margin: 0 auto;
+			top:75px;
+		}
+		.select span{
+			display:block;
+			width:100px;height: 30px;
+			margin: 0 auto;
+			text-align: center;line-height: 30px;
+			font-size: 16px;color: #eeeeee;overflow:hidden;
+		}
+		.select span:nth-of-type(1){
+			animation:donghua 2s linear forwards;
+		}
+		.select span:nth-of-type(2){
+			animation:donghua 2s linear 2s forwards;
+		}
+		@-webkit-keyframes donghua{
+			0%{
+				width:0;
+			}
+			100%{
+				width:100px;
+			}
+		}
+		.select input{
+			display: block;
+			width: 150px;height: 20px;
+			margin: 10px auto;
+			text-align: center;line-height: 30px;
+			font-size: 16px;color: #666;
+		}
+		#start{
+			display: block;
+			width: 75px;height: 25px;text-decoration: none;color:green;font-size:20px;
+			position: absolute;bottom: 80px;left:182px;
+			border: 1px solid yellow;
+			box-shadow: 0 0 5px yellow;
+			text-align: center;
+			border-radius: 30%/10%;
+		}
+		#start:hover{
+			box-shadow:  0 0 5px yellow inset;
+			background: green;
+			color: white;
+		}
+		.select div{
+			color: white;
+			text-align: center;font-size: 1.2em;
+
+		}
+		.text{
+			position: fixed;left: 44%;top: 25%;
+		}
+		.message{
+			height: 80px;width: 100%;position: fixed;top: 0;left: 0;z-index: 999;
+		}
+		.message div{
+			float: left;height: 80px;width: 33.3333%;text-align: center;line-height: 80px;
+		}
+		.message div img{
+			height: 80px;width: 80px;vertical-align: middle;
+		}
+		.message div span{
+			height: 80px;width: auto;margin-left: 10px;color: #fff;color: #fff;font-size: 26px;vertical-align: bottom;
+		}
+		.message div .si{
+			width:0px;display:block;font-size:16px;text-align: center;margin-top:-30px;overflow: hidden;animation:dong linear infinite alternate;
+		}
+		@-webkit-keyframes dong{
+			0%{
+				width:0;
+			}
+			100%{
+				width:445px;
+			}
+		}
+		.next{
+			width: 450px;
+			height: 300px;
+			position: fixed;left: 0;top: 0;right: 0;bottom: 0;margin: auto auto;
+			background: url(img/打字背景.png) no-repeat 0 0;
+			background-size:100% 101%;
+			display: none;opacity: 0;
+			z-index: 100;
+		}
+		.next img{
+			position: absolute;top: 100px;right: 130px;
+		}
+		.mes{
+			width: 150px;
+			height: 100px;
+			position: absolute;
+			top: 100px;
+			left: 165px;
+			font-size: 20px;
+			color: #381a07;
+			font-family: "微软雅黑";
+		}
+		#go{
+			display: block;
+			width: 75px;height: 25px;text-decoration: none;color:#eee;
+			position: absolute;bottom: 80px;left: 182px;
+			border: 1px solid yellow;
+			box-shadow: 0 0 5px yellow;
+			text-align: center;
+			line-height: 25px;
+			font-size: 1.2em;
+			color:green;
+			border-radius: 30%/10%;
+		}
+		#go:hover{
+			box-shadow:  0 0 5px yellow inset;
+			background: green;
+			color: white;
+		}
+
+		.fail{
+			width: 450px;height: 300px;
+			position: fixed;left: 0;top: 0;right: 0;bottom: 0;margin: auto auto;
+			background: url(img/打字背景.png) no-repeat 0 0;
+			background-size:100% 101%;
+			display: none;opacity: 0;
+			z-index: 100;
+		}
+		.fail img{
+			position: absolute;top: 100px;right: 130px;
+		}
+		.score{
+			width: 180px;height: 100px;
+			position: absolute;top: 100px;left: 160px;
+			font-size: 18px;color: #381a07;font-weight: 500
+		}
+		#again{
+			text-decoration: none;
+			display: block;
+			width: 75px;height: 25px;
+			position: absolute;bottom: 80px;left: 182px;
+			border: 1px solid yellow;
+			box-shadow: 0 0 5px yellow;
+			line-height: 25px;
+			text-align: center;
+			border-radius: 30%/10%;
+		}
+		#again:hover{
+			box-shadow:  0 0 5px yellow inset;
+			background: green;
+			color: white;
+		}
+
+		.back,.close{
+			display: block;
+			width: 20px;height: 20px;text-decoration:none;color:#ccbd8d;font-size:30px;font-family:Arial;font-weight:500;
+			position: absolute;top: 11px;right: 67px;
+		}
+		strong{
+			color: white;
+			font-size: 1.5em;
+			position: relative;
+			top: 3px;
+		}
+		.score h2{
+			color: red;
+			margin-top:0 ;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="start">
+		<div class="select">
+			<div>Typing Game！</div>
+			<span>请选择关卡: </span><input type="number" min="1" value="1">
+		</div>
+		<a href="javascript:;" id="start">开始</a>
+	</div>
+	<!-- <input type="text" class="text" value="请选择关卡数"> -->
+	<div class="message">
+		<div>
+			<strong>得分</strong>
+			<span>0</span>
+			<span class="si">都是钱呀</span>
+		</div>
+		<div>
+			<strong>生命</strong>
+			<span>10</span></br>
+			<span class="si">哎，又快死啦，倒霉！</span>
+		</div>
+		<div>
+			<strong>关卡</strong>
+			<span id="stepbox">1</span></br>
+			<span class="si">快来追我呀</span>
+		</div>
+	</div>
+	<div class="next">
+		<div class="mes">
+			下一关: 第&nbsp;<span id="step"></span>&nbsp;关<br><br>
+			难度: <span id="difficult"></span>
+		</div>
+		<a href="javascript:;" id="go">GO!</a>
+		<!--<a href="javascript:;" class="close">X</a>-->
+	</div>
+	<div class="fail">
+		<div class="score">
+			<h2>gameover！</h2>
+			您的得分是: <span id="score"></span>分
+		</div>
+		<a href="javascript:;" id="again">再来</a>
+	</div>
+</body>
+</html>

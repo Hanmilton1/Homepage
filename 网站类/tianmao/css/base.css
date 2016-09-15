@@ -1,0 +1,14 @@
+body,ul,li,p,h1,h2,h3,h4,h5,h6,form,input,dl,dt,dd{
+     margin:0;padding:0;list-style:none;
+     /*font-family:"宋体";*/font-family: "Microsoft YaHei";
+     font:12px/1.5;font-weight:normal;
+}
+a{
+   color:#333;text-decoration:none;
+}
+a:hover{
+	text-decoration: underline;
+}
+img{
+    border:none;
+}

@@ -1,0 +1,31 @@
+body{
+    margin:0;
+}
+.scene{
+    width:300px;
+    height:300px;
+    position: fixed;
+    left:0;top:0;right:0;bottom: 0;
+    margin:auto;
+    background: url("../img/钟表.png");
+    background-size: contain;
+}
+.clock{
+    width:200px;height:200px;
+    /*border:10px solid #aaa;*/
+    border-radius: 50%;
+    position: fixed;
+    left:0;top:0;right:0;bottom: 0;
+    margin:auto;
+    /*background:radial-gradient(#fff,#ccc);*/
+}
+.center{
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    background:radial-gradient(#fff,#ccc);
+    position: relative;
+    z-index: 222;
+    margin: 90px auto;
+
+}

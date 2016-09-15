@@ -1,0 +1,143 @@
+ul,li,body{
+    padding:0;margin:0;list-style: none;
+}
+body{
+    width:1359px;
+    height:665px;
+    background: url(画板.png) no-repeat;
+    background-size:1359px 665px;
+    margin: 0;
+    position: relative;
+}
+.container{
+    width:100px;height:auto;
+    position: absolute;
+    left: -240px;
+    top:80px;
+    display: none;
+}
+
+.menu{
+    width:100px;height:280px;text-align: center;
+    line-height: 30px;position: relative;
+    z-index:2;cursor: pointer;
+    /*border: solid 1px #D7922D;*/
+    margin-top:2px ;
+    border-radius: 6px;
+}
+.menu .parent{
+    width:100%;height:30px;float:left;
+    background: #FDCA57;
+    margin-bottom: 2px;
+    color:#975C25;
+}
+.parent:hover{
+    background: #975C25;
+    color:#FDCA57;
+}
+.menu .parent div{
+    width:100%;height:100%;
+}
+.menu .parent .son{
+    width:100%;
+    position: relative;
+    left: 100%;
+    top: -100%;
+}
+.boxs{
+    width: 700px;
+    height:438px;
+    background: url("画板框_03.png") no-repeat;
+    background-size: cover ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    margin: auto;
+    cursor: pointer;
+    /*background: red;*/
+}
+.box{
+    position: absolute;
+    width: 619px;
+    height: 355px;
+    top: 37px;
+    left: 40px;
+}
+.box .copy{
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 619px;
+    height: 355px;
+}
+.box canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:url(黑板.png);
+    background-size: cover;
+    display: none;
+}
+.son{
+    display:none;background:#aaa;
+}
+.son li{
+    background:#37D6AB;
+    color:#000;
+    transition: all 2s ease;
+}
+
+.son li:hover{
+    background:#000;
+    color:#aaa;
+}
+.xp{
+    width:8px;height:8px;border:1px solid #000;
+    position: absolute;left:0;top:0;display: none;
+
+}
+.selectarea{
+    border:1px dotted #000;
+    position: absolute;
+    left:0;top:0;
+    display:none;
+}
+.start{
+    position: absolute;
+    right: -180px;
+    top: -200px;
+    width: 80px;
+    height: 50px;
+    border:2px solid red;
+    text-align: center;
+    border-radius: 30%/10%;
+    box-shadow: 0 0 15px yellow, 0 0 15px red, 0 0 35px yellow;
+    color:white;
+    font-size: 1.5em;
+    font-weight: bolder;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all .5s ease;
+    animation:aaa 2s cubic-bezier(0.22, 0.85, 1, 1.79) 2s forwards;
+}
+@keyframes aaa {
+    100%{transform: translateY(400px) rotateY(3600deg)}
+}
+.start:hover{
+    color: red;
+    border:2px solid green;
+    transform: scale(1.2);
+}
+.xian{
+    background: #C3DE00;
+    width: 2px;
+    height: 500px;
+    position: relative;
+    left: 50%;
+    top: -552px;
+}
+
+

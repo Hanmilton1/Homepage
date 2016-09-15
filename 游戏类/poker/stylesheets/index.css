@@ -1,0 +1,63 @@
+body{
+	margin: 0;
+	background: url("../images/back3.jpg");
+}
+#sence{
+	width: 960px;
+	height: 780px;
+	/*background: rgba(204, 210, 45, 0.8);*/
+	margin: 0 auto;
+	position: relative;
+}
+.poker{
+	width: 120px;
+	height: 180px;
+	background:rgb(255,255, 255);
+	border: 1px solid #310D31;
+	position: absolute;
+	left: 0;
+	top:0;
+	font-size: 2em;
+	color:#fff;
+	cursor: pointer;
+	background-size: cover;
+}
+#left,#right{
+	width: 120px;
+	height: 180px;
+	border:2px solid #2CBED5;
+}
+#left{
+	position: absolute;;
+	top:510px;
+	left:130px;
+}
+#right{
+	position: absolute;;
+	top:510px;
+	right:130px;
+}
+#next{	
+	position: absolute;
+	top:550px;
+	right:45%;
+}
+#reset{
+	position: absolute;
+	top:600px;
+	right:45%;
+}
+#next,#reset{
+	width: 80px;
+	height: 30px;
+	border-radius: 10px;
+	border:2px solid #2CBED5;
+	color: black;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+#next:hover,#reset:hover{
+	background: black;
+	color: white;
+}

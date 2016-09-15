@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/response.css">
+    <link rel="stylesheet" href="./css/apple.css">
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/touch-0.2.14.js"></script>
+    <script src="./js/apple.js"></script>
+
+</head>
+<style>
+    .rotate{
+        width:100px;height:100px;border:1px solid red;
+    }
+    .swipe{
+        width:100px;height:100px;border:1px solid red;margin:20px auto 0;
+    }
+</style>
+
+<body>
+<!--<div class="rotate">旋转</div>-->
+<!--<div class="swipe">移动</div>-->
+<header>
+    <div class="header container-fluid header1">
+        <div class="header-con">
+            <div class="container-fluid">
+                <div class="row">
+                    <a class="col-s-2"><img src="./images/label1.svg"/></a>
+                    <a class="col-s-1"><img src="./images/label2.svg"/></a>
+                    <a class="col-s-1"><img src="./images/label3.svg"/></a>
+                    <a class="col-s-1"><img src="./images/label4.svg"/></a>
+                    <a class="col-s-1"><img src="./images/label5.svg"/></a>
+                    <a class="col-s-1"><img src="./images/label6.svg"/></a>
+                    <a class="col-s-1">技术支持</a>
+                    <a class="col-s-2"><img src="./images/label8.svg"/></a>
+                    <a class="col-s-2 car-img"><img src="./images/label9.svg"/></a>
+                        <div class="car">
+                            <a class="empty" text-l>你的购物袋是空的</a>
+                            <a class="" text-l><img src="./images/bag.svg"/>购物袋</a>
+                            <a class="" text-l><img src="./images/bag2.svg"/>收藏</a>
+                            <a class="" text-l><img src="./images/bag3.svg"/>订单</a>
+                            <a class="" text-l><img src="./images/bag4.svg"/>账户</a>
+                            <a class="" text-l><img src="./images/bag5.svg"/>登录</a>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header container-fluid header2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-s-4 menubtn" text-l>二
+                    <div class="daohang">
+                        <a class=""><img src="./images/label2.svg"/></a>
+                        <a class=""><img src="./images/label3.svg"/></a>
+                        <a class=""><img src="./images/label4.svg"/></a>
+                        <a class=""><img src="./images/label5.svg"/></a>
+                        <a class=""><img src="./images/label6.svg"/></a>
+                        <a class="">技术支持</a>
+                        <a class="">搜索 apple.com</a>
+                    </div>
+
+                </div>
+                <div class="col-s-4" text-c><img src="./images/label1.svg"/></div>
+                <div class="col-s-4 car-img" text-r><img src="./images/label9.svg"/>
+                    <div class="car">
+                        <a class="" text-l><img src="./images/bag.svg"/>购物袋</a>
+                        <a class="" text-l><img src="./images/bag2.svg"/>收藏</a>
+                        <a class="" text-l><img src="./images/bag3.svg"/>订单</a>
+                        <a class="" text-l><img src="./images/bag4.svg"/>账户</a>
+                        <a class="" text-l><img src="./images/bag5.svg"/>登录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--banner开始-->
+<div class="banner container-fluid">
+    <ul class="btn">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="list" text-c>
+        <div class="box">
+            <a class="banner-img" id="bg-img1">
+                <h1 >让新意从此开启</h1>
+                <h4>看看艺术家们用Apple产品,创作出了怎样的精彩之作</h4>
+                <h6>浏览作品廊</h6>
+            </a>
+            <a class="banner-img" id="bg-img2">
+                <h1 >发电公司的风格</h1>
+                <h4>新年快乐</h4>
+                <h6>进一步了解> 立即选购></h6>
+            </a>
+            <a class="banner-img" id="bg-img3">
+                <h1 >iPad Pro</h1>
+                <h4>轻,薄,磅礴</h4>
+                <h6>进一步了解> 观看主题演讲></h6>
+            </a>
+            <a class="banner-img" id="bg-img4">
+                <h1 >全新Apple Music iYunes 电影,iBooks,<br>各种娱乐好戏,同台上演</h1>
+                <!--<h4>的四方股份的公司发生的过</h4>-->
+                <h6>限时专享的各式好礼> 音乐红人打造的新春歌单></h6>
+            </a>
+            <a class="banner-img" id="bg-img5">
+                <h1 >让新意从此开启</h1>
+                <h4>看看艺术家们用Apple产品,创作出了怎样的精彩之作</h4>
+                <h6>浏览作品廊</h6>
+            </a>
+        </div>
+
+    </div>
+</div>
+<!--banner结束-->
+
+<!--手机开始-->
+<div class="phone container-fluid">
+    <ul class="row">
+        <li class="col-s-12 col-m-6 col-l-3" id="one"></li>
+        <li class="col-s-12 col-m-6 col-l-3" id="two"></li>
+        <li class="col-s-12 col-m-6 col-l-3" id="three"></li>
+        <li class="col-s-12 col-m-6 col-l-3" id="four"></li>
+    </ul>
+</div>
+<!--手机结束-->
+<!--footer开始-->
+<footer>
+    <div class="container-fluid footer1">
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <ul class="col-l-2 col-m-2">
+                        <h3>选购了解</h3>
+                        <li><a href="javascript:;">Mac</a></li>
+                        <li><a href="javascript:;">iPad</a></li>
+                        <li><a href="javascript:;">iPhone</a></li>
+                        <li><a href="javascript:;">Watch</a></li>
+                        <li><a href="javascript:;">Music</a></li>
+                        <li><a href="javascript:;">iTunes</a></li>
+                        <li><a href="javascript:;">iPod</a></li>
+                        <li><a href="javascript:;">配件</a></li>
+                    </ul>
+                    <ul class="col-l-2 col-m-2">
+                        <h3>选购了解</h3>
+                        <li><a href="javascript:;">直找零售店</a></li>
+                        <li><a href="javascript:;">Genius Bar 天才吧</a></li>
+                        <li><a href="javascript:;">讲座和学习</a></li>
+                        <li><a href="javascript:;">青少年活动</a></li>
+                        <li><a href="javascript:;">Apple Store App</a></li>
+                        <li><a href="javascript:;">翻新产品</a></li>
+                        <li><a href="javascript:;">分期付款</a></li>
+                        <li><a href="javascript:;">重复使用和循环利用</a></li>
+                        <li><a href="javascript:;">订单状态</a></li>
+                        <li><a href="javascript:;">选购帮助</a></li>
+                    </ul>
+                    <div class="col-l-2 col-m-2">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <ul class="col-l-12">
+                                    <h3>选购了解</h3>
+                                    <li><a href="javascript:;">Apple 与教育</a></li>
+                                    <li><a href="javascript:;">高校师生选购</a></li>
+                                </ul>
+                                <ul class="col-l-12">
+                                    <h3>选购了解</h3>
+                                    <li><a href="javascript:;">iPhone 商务应用</a></li>
+                                    <li><a href="javascript:;">iPad 商务应用</a></li>
+                                    <li><a href="javascript:;">Mac 商务应用</a></li>
+                                    <li><a href="javascript:;">商务选购</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-l-2 col-m-2">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <ul class="col-l-12">
+                                    <h3>选购了解</h3>
+                                    <li><a href="javascript:;">管理你的Apple ID</a></li>
+                                    <li><a href="javascript:;">Apple Store 账户</a></li>
+                                    <li><a href="javascript:;">iCloud.com</a></li>
+                                </ul>
+                                <ul class="col-l-12">
+                                    <h3>选购了解</h3>
+                                    <li><a href="javascript:;">环境责任</a></li>
+                                    <li><a href="javascript:;">供应商责任</a></li>
+                                    <li><a href="javascript:;">辅助功能</a></li>
+                                    <li><a href="javascript:;">隐私</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="col-l-2 col-m-2">
+                        <h3>选购了解</h3>
+                        <li><a href="javascript:;">Apple 资讯</a></li>
+                        <li><a href="javascript:;">工作机会</a></li>
+                        <li><a href="javascript:;">媒体资讯</a></li>
+                        <li><a href="javascript:;">活动</a></li>
+                        <li><a href="javascript:;">热点新闻</a></li>
+                        <li><a href="javascript:;">法律信息</a></li>
+                        <li><a href="javascript:;">联系 Apple</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="quanxian">
+                <span>更多选购方式：前往 Apple Store 零售店，致电 400-666-8800 或查找在你附近的授权经销商。</span>
+                    <span>
+                        <i>Copyright © 2015 Apple Inc. 保留所有权利。</i>
+                        <i>
+                            <a href="">隐私政策</a>
+                            <a href="">使用条款</a>
+                            <a href="">销售政策</a>
+                            <a href="">网站地图</a>
+                        </i>
+                        <div class="clear"></div>
+                    </span>
+                <span>京公安网安备 11010500896 京ICP备10214630</span>
+            </div>
+        </div>
+
+
+    </div>
+    <!--////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <div class="container-fluid footer2">
+
+        <div class="container-fluid footer-con">
+            <div class="row">
+                <div class="col-s-12 footer-heng">
+                    选购及了解
+                    <span>+</span>
+                    <ul>
+                        <li><a href="javascript:;">Mac</a></li>
+                        <li><a href="javascript:;">iPad</a></li>
+                        <li><a href="javascript:;">iPhone</a></li>
+                        <li><a href="javascript:;">Watch</a></li>
+                        <li><a href="javascript:;">Music</a></li>
+                        <li><a href="javascript:;">iTunes</a></li>
+                        <li><a href="javascript:;">iPod</a></li>
+                        <li><a href="javascript:;">配件</a></li>
+                    </ul>
+                </div>
+                <div class="col-s-12 footer-heng">
+                    Apple Store 商店
+                    <span>+</span>
+                    <ul>
+                        <li><a href="javascript:;">直找零售店</a></li>
+                        <li><a href="javascript:;">Genius Bar 天才吧</a></li>
+                        <li><a href="javascript:;">讲座和学习</a></li>
+                        <li><a href="javascript:;">青少年活动</a></li>
+                        <li><a href="javascript:;">Apple Store App</a></li>
+                        <li><a href="javascript:;">翻新产品</a></li>
+                        <li><a href="javascript:;">分期付款</a></li>
+                        <li><a href="javascript:;">重复使用和循环利用</a></li>
+                        <li><a href="javascript:;">订单状态</a></li>
+                        <li><a href="javascript:;">选购帮助</a></li>
+                    </ul>
+                </div>
+                <div class="col-s-12 footer-heng">
+                    教育应用
+                    <span>+</span>
+                    <ul>
+                        <li><a href="javascript:;">Apple 与教育</a></li>
+                        <li><a href="javascript:;">高校师生选购</a></li>
+                    </ul>
+                </div>
+                <div class="col-s-12 footer-heng">
+                    商务应用
+                    <span>+</span>
+                    <ul>
+                        <li><a href="javascript:;">iPhone 商务应用</a></li>
+                        <li><a href="javascript:;">iPad 商务应用</a></li>
+                        <li><a href="javascript:;">Mac 商务应用</a></li>
+                        <li><a href="javascript:;">商务选购</a></li>
+                    </ul>
+                </div>
+                <div class="col-s-12 footer-heng">
+                    账户
+                    <span>+</span>
+                    <ul>
+                        <li><a href="javascript:;">管理你的Apple ID</a></li>
+                        <li><a href="javascript:;">Apple Store 账户</a></li>
+                        <li><a href="javascript:;">iCloud.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-s-12 footer-heng">
+                    Apple价值观
+                    <span>+</span>
+                    <ul>
+                        <li><a href="javascript:;">环境责任</a></li>
+                        <li><a href="javascript:;">供应商责任</a></li>
+                        <li><a href="javascript:;">辅助功能</a></li>
+                        <li><a href="javascript:;">隐私</a></li>
+                    </ul>
+                </div>
+                <div class="col-s-12 footer-heng">
+                    关于 Apple
+                    <span>+</span>
+                    <ul>
+                        <li><a href="javascript:;">Apple 资讯</a></li>
+                        <li><a href="javascript:;">工作机会</a></li>
+                        <li><a href="javascript:;">媒体资讯</a></li>
+                        <li><a href="javascript:;">活动</a></li>
+                        <li><a href="javascript:;">热点新闻</a></li>
+                        <li><a href="javascript:;">法律信息</a></li>
+                        <li><a href="javascript:;">联系 Apple</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="quanxian">
+            <span>更多选购方式：前往 Apple Store 零售店，致电 400-666-8800 或查找在你附近的授权经销商。</span>
+                    <span>
+                        <i>Copyright © 2015 Apple Inc. 保留所有权利。</i>
+                        <i>
+                            <a href="">隐私政策</a>
+                            <a href="">使用条款</a>
+                            <a href="">销售政策</a>
+                            <a href="">网站地图</a>
+                        </i>
+                        <div class="clear"></div>
+                    </span>
+            <span>京公安网安备 11010500896 京ICP备10214630</span>
+        </div>
+    </div>
+</footer>
+<!--footer结束-->
+</body>
+</html>

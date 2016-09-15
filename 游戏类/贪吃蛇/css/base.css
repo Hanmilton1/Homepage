@@ -1,0 +1,19 @@
+body{margin:0;overflow: hidden}
+.bg{
+    width: 100%;
+    height:660px;
+    background: url(../bg.jpg) no-repeat;
+    background-size: 100%;
+}
+#sence1{
+    box-shadow:0 0 30px #1830CB;
+    width:600px;
+    height:600px;
+    border:1px solid black;
+    border-right:none;
+    border-bottom:none;
+    background-color:#4AB4DA;
+    position:relative;
+    top:10px;left: 0;right:0;bottom:0;
+    margin: auto;
+}

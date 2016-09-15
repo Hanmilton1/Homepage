@@ -1,0 +1,145 @@
+@font-face{
+	font-family:"ssss";
+    src:url(../font/sss.ttf);
+}
+body{
+	margin:0;
+	font-family: 'Helvetica';
+	position: relative;
+	-webkit-user-select:none;
+}
+.interface{
+	width: 320px;
+	height: 570px;
+	margin:30px auto;
+	border:1px solid #dee7e7;
+	background-color:#dee7e7;
+	box-shadow: 0 0 10px black;
+	position: relative;	
+}
+
+#screen{
+	width: 270px;
+	height: 100px;
+	margin: 40 auto;
+	border: 1px solid #627b43; 
+	background-color:#627b43;
+	border-radius: 3px;
+	border: 5px solid #222;
+	font-family:"ssss";
+	font-size: 3em;
+	text-align: right;
+	line-height: 100px;
+	box-shadow: 0 0 15px black inset;
+	overflow: hidden;
+}
+.memo{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	font-size: bold;
+	top:8.5%;
+	left: 49%;
+}
+.button{
+	width: 58px;
+	height: 45px;
+	margin: 7px 8px;
+	float: left;
+	color: white;
+	cursor: pointer;
+	font-size: 1.5em;
+	text-align: center;
+	border-radius: 3px;	
+	box-shadow: 0 0 10px black;
+	line-height: 45px;
+}
+.yi{
+	margin-left: 20px;
+}
+.ling{
+	width:133px; 
+}
+.denghao{
+	height: 104px;
+	float: right;
+	margin-right:19px;
+	background-image: linear-gradient(#f3814e, #f05d1c);
+	line-height: 104px;
+	-webkit-transition:all .5s ease;
+}
+.denghao:hover{
+	background-image: linear-gradient(#aaaba2, #575852);
+}
+.hui{
+	background-image: linear-gradient(#41423e, #161615);
+	-webkit-transition:all .5s ease;
+}
+.hui:hover{
+	background-image: linear-gradient(#aaaba2, #575852);	
+}
+#fushu{
+	background-image: linear-gradient(#41423e, #161615);
+	-webkit-transition:all .5s ease;
+}
+#fushu:hover{
+	background-image: linear-gradient(#aaaba2, #575852);
+}
+.white{
+	background-image: linear-gradient(#f2f3ec, #d1d2cb);
+	color:black;
+	-webkit-transition:all .5s ease;
+}
+.white:hover{
+	color: white;
+	background-image: linear-gradient(#aaaba2, #575852);	
+}
+#two{
+	position: absolute;
+	display: none;
+	margin: 0;
+	top:30;
+	left: 26%;
+	width: 640px;
+}
+#screen2{
+	width: 560px;
+	height: 100px;
+	margin: 40 auto;
+	border: 1px solid #627b43; 
+	background-color:#627b43;
+	border-radius: 3px;
+	border: 5px solid #222;
+	font-family:"ssss";
+	font-size: 3em;
+	text-align: right;
+	line-height: 100px;
+	box-shadow: 0 0 15px black inset;
+}
+.yiyi{
+	margin-left: 32px;
+}
+#denghao2{
+	margin-right: 31px;
+}
+#supper{
+	position: fixed;
+	width: 100px;
+	height: 40px;
+	background: #ccc;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 5px;
+	cursor: pointer;
+	top:200px;
+	left: 40px;
+}
+#supper:hover{
+	background-image: linear-gradient(#aaaba2, #575852);
+}
+.si{
+	font-size: 1.3em;
+}
+.gen{
+	font-family: 'MS Gothic';
+}
